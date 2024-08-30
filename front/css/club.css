@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Garet';
+    src: url('/BLOC3-DI23/front/assets/fonts/Garet-Book.ttf') format('truetype'),
+        url('/BLOC3-DI23/front/assets/fonts/Garet-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garet-Heavy';
+    src: url('/BLOC3-DI23/front/assets/fonts/Garet-Heavy.ttf') format('truetype'),
+        url('/BLOC3-DI23/front/assets/fonts/Garet-Heavy.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gliker';
+    src: url('/BLOC3-DI23/front/assets/fonts/Gliker-Regular.woff2') format('woff2'),
+        url('/BLOC3-DI23/front/assets/fonts/Gliker-Regular.woff') format('woff'),
+        url('/BLOC3-DI23/front/assets/fonts/Gliker-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Garet', sans-serif;
+    font-size: 80%;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barre de menu */
+header {
+    background-color: #ffffff;
+    border-bottom: none;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    height: 75px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.logo a {
+    display: block;
+    width: 100px;
+    height: 100%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Gliker', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 75px;
+    padding: 0 10px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Bannière du club */
+.club-banner {
+    position: relative;
+}
+
+.stadium-photo {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stadium-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stadium-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.club-logo-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.club-logo-banner img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Nom du club */
+.club-name {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.club-name h2 {
+    font-size: 30px;
+    color: #014175;
+    font-weight: bold;
+}
+
+/* Détails du club */
+.club-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 15px;
+}
+
+.club-info-container,
+.club-top-scorers-container,
+.club-lineup-container,
+.club-coaches-and-match-container {
+    width: 23%;
+    text-align: center;
+}
+
+.club-info,
+.club-top-scorers,
+.club-lineup,
+.club-coaches-and-match {
+    background-color: #014175;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 320px;
+    box-sizing: border-box;
+}
+
+.club-top-scorers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.top-scorer-highlight {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.top-scorer-highlight img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.top-scorer-name {
+    font-size: 1.2em;
+    color: #FFD700;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.other-scorers {
+    width: 100%;
+    height: 75%;
+    overflow-y: auto;
+}
+
+.club-coaches-and-match {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.club-coaches,
+.club-next-match {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px;
+    border: 2px solid #014175;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.club-next-match p,
+.club-coaches p {
+    margin: 5px 0;
+    line-height: 1.2;
+}
+
+.club-next-match p,
+.club-coaches p {
+    font-size: 14px;
+}
+
+/* Image de fond pour l'équipe type */
+.club-lineup {
+    background-image: url('/BLOC3-DI23/front/assets/soccer_field.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
