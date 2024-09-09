@@ -163,7 +163,7 @@ function addTable($db, $dbName) {
         "user" => "CREATE TABLE IF NOT EXISTS user (
             id INT AUTO_INCREMENT PRIMARY KEY,
             user_favorite_club_id INT,
-            user_pseudo VARCHAR(255) NOT NULL,
+            user_pseudo VARCHAR(191) NOT NULL,
             user_password VARCHAR(255) NOT NULL,
             user_role VARCHAR(255) NOT NULL DEFAULT 'supporter',
             UNIQUE (user_pseudo),

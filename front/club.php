@@ -3,11 +3,17 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-require_once '../back/CRUD/club.php';
-require_once '../back/CRUD/coach.php';
-require_once '../back/CRUD/player.php';
-require_once '../back/CRUD/team_lineup.php';
-require_once '../back/CRUD/user.php';
+require_once dirname(__DIR__) . '/back/CRUD/club.php';
+require_once dirname(__DIR__) . '/back/CRUD/coach.php';
+require_once dirname(__DIR__) . '/back/CRUD/player.php';
+require_once dirname(__DIR__) . '/back/CRUD/team_lineup.php';
+require_once dirname(__DIR__) . '/back/CRUD/user.php';
+
+// require_once '../back/CRUD/club.php';
+// require_once '../back/CRUD/coach.php';
+// require_once '../back/CRUD/player.php';
+// require_once '../back/CRUD/team_lineup.php';
+// require_once '../back/CRUD/user.php';
 
 session_start(); // Pour récupérer l'ID de l'utilisateur connecté
 
@@ -72,12 +78,13 @@ $favorite_club_id = $user_id ? getFavoriteClubId($user_id) : null;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($club_name); ?></title>
-    <link rel="stylesheet" type="text/css" href="./css/club.css">
+    <link rel="stylesheet" type="text/css" href="/BLOC3-DI23/front/css/club.css">
 </head>
 
 <body>
 <header>
-    <?php include '/var/www/html/BLOC3-DI23/front/menu.php'; ?>
+    <?php require_once dirname(__DIR__) . '/front/menu.php'; ?>
+    
 </header>
 
 <section class="club-banner">

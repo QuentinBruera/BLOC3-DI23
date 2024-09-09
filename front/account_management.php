@@ -23,8 +23,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion du compte</title>
     <link rel="stylesheet" href="/BLOC3-DI23/front/css/account_management.css">
+    <link rel="stylesheet" type="text/css" href="/BLOC3-DI23/front/css/menu.css">
 </head>
 <body>
+    <header>
+        <?php require_once dirname(__DIR__) . '/front/menu.php' ?>
+    </header>
     <section id="main_container">
         <!-- pseudo form -->
         <div  class="form_container">
