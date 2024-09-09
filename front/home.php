@@ -5,8 +5,6 @@
 
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         $user_role = $_SESSION['user_role'];
-        echo "You are logged in as " . $user_role . ".";
-        echo "<br>";
     }
 
     if (isset($_SESSION['message'])) {
@@ -24,8 +22,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
+    <link rel="stylesheet" type="text/css" href="/BLOC3-DI23/front/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/BLOC3-DI23/front/css/menu.css">
 </head>
 <body>
+    <header>
+        <?php require_once dirname(__DIR__) . '/front/menu.php' ?>
+    </header>
+    <section>
+
+    </section>
+<!-- </br>
+</br>
+</br>
     <?php if ($user_role === 'admin') { ?>
         <div>
             <a href="./create_match">Créer un match</a>
@@ -58,6 +67,6 @@
     <?php } ?>
     <div>
         <a href="./clubs">Les équipes</a>
-    </div>
+    </div> -->
 </body>
 </html>

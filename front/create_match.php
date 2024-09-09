@@ -46,8 +46,12 @@ $favoriteClubId = 1;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programmer un match</title>
     <link rel="stylesheet" href="/BLOC3-DI23/front/css/create_match.css">
+    <link rel="stylesheet" type="text/css" href="/BLOC3-DI23/front/css/menu.css">
 </head>
 <body>
+    <header>
+        <?php require_once dirname(__DIR__) . '/front/menu.php' ?>
+    </header>
     <section id="main_container">
         <form id="match_form" action="./process_create_match" method="POST">
             <div id="left_container">

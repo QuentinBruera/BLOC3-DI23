@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    background-image: url(../assets/accueil.png);
+    height: calc(100vh - 75px);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}

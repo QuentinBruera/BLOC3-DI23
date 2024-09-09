@@ -76,8 +76,12 @@ function createSoccerFieldPosition($lineUp, $playerPosition) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avant match</title>
     <link rel="stylesheet" href="/BLOC3-DI23/front/css/match_sheet.css">
+    <link rel="stylesheet" type="text/css" href="/BLOC3-DI23/front/css/menu.css">
 </head>
 <body>
+    <header>
+        <?php require_once dirname(__DIR__) . '/front/menu.php' ?>
+    </header>
     <section id="information_title_container">
         <h2>HOME - VISITOR</h2>
         <p>Date : <span><?php echo $date ?></span> - Lieu : <span><?php echo $stadiumName ?></span></p>

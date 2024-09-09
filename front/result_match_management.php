@@ -28,8 +28,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choisir un match</title>
     <link rel="stylesheet" href="/BLOC3-DI23/front/css/result_match_management.css">
+    <link rel="stylesheet" type="text/css" href="/BLOC3-DI23/front/css/menu.css">
 </head>
 <body>
+<header>
+        <?php require_once dirname(__DIR__) . '/front/menu.php' ?>
+    </header>
 <section>
         <div id="next_match_container">
             <h3>Matchs joués</h3>

@@ -6,7 +6,8 @@ body {
 
 #main_container {
     background-image: url(../assets/Ecran_Ligue_1.png);
-    height: 100vh;
+    height: calc(100vh - 75px);
+    background-size: cover;
     width: 100%;
     display: flex;
 }
@@ -28,7 +29,7 @@ form {
 
 label {
     align-self: flex-start;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     background-color: white;
     width: 50%;
@@ -39,7 +40,7 @@ label {
 
 input, select{
     align-self: flex-end;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     padding: 10px 0 10px 0;
     margin: 2px 10px 0 0;
@@ -57,13 +58,13 @@ option {
 
 #submit {
     display: flex;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
     justify-content: center;
     background-color: #00A45E;
     color: #011939;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
-    padding: 25px 0;
+    padding: 15px 0;
     border: none;
     border-radius: 50px;
     cursor: pointer;

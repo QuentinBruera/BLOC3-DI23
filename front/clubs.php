@@ -21,8 +21,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les équipes</title>
     <link rel="stylesheet" href="/BLOC3-DI23/front/css/clubs.css">
+    <link rel="stylesheet" type="text/css" href="/BLOC3-DI23/front/css/menu.css">
 </head>
 <body>
+    <header>
+        <?php require_once dirname(__DIR__) . '/front/menu.php' ?>
+    </header>
     <section id="main_container">
         <h1>CLUBS</h1>
         <div id="card_container">

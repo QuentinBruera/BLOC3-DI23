@@ -1,6 +1,9 @@
+
 body {
+    margin: 0;
+    padding: 0;
     background-color: #f4f6f8;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 #main_container {
@@ -30,7 +33,7 @@ body {
 
 .form_item {
     display: flex;
-    margin: 0 150px 50px 150px;
+    margin: 0 100px 50px 100px;
     justify-content: space-between;
 }
 
@@ -94,7 +97,7 @@ input {
 }
 
 #submit {
-    background-color: #00A45E;
+    background-color: #00a45e;
     color: white;
     font-size: 24px;
     padding: 10px 20px 10px 20px;

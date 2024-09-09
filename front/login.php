@@ -21,7 +21,7 @@
     </head>
     <body>
     <header>
-        <?php include '/var/www/html/BLOC3-DI23/front/menu.php'; ?>
+        <?php require_once dirname(__DIR__) . '/front/menu.php' ?>
     </header>
         <section id="main_container">
             <form id="sign_in" action="./process_login" method="POST">

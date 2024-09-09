@@ -3,9 +3,9 @@
 
     if(isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'coach') {
         require_once dirname(__DIR__) . '/back/CRUD/club.php';
-        require_once dirname(__DIR__) . './back/CRUD/coach.php';
-        require_once dirname(__DIR__) . './back/CRUD/pre_match.php';
-        require_once dirname(__DIR__) . './back/CRUD/pre_match_team_lineup_versus.php';
+        require_once dirname(__DIR__) . '/back/CRUD/coach.php';
+        require_once dirname(__DIR__) . '/back/CRUD/pre_match.php';
+        require_once dirname(__DIR__) . '/back/CRUD/pre_match_team_lineup_versus.php';
 
         if (isset($_SESSION['message'])) {
             // addslashes() allows to escape special characters
@@ -34,8 +34,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gérer mon équipe</title>
     <link rel="stylesheet" href="/BLOC3-DI23/front/css/coach_management.css">
+    <link rel="stylesheet" type="text/css" href="/BLOC3-DI23/front/css/menu.css">
 </head>
 <body>
+    <header>
+        <?php require_once dirname(__DIR__) . '/front/menu.php' ?>
+    </header>
     <!-- Banner -->
     <section id="banner">
         <div>
